@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <title>Movie</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="h1 invisible"> watch movie with us</h1>
+    <h2 class="h2 text-center mb-3">Movies Catalog</h2>
+    <div class="row">
+      <div class="col-4">
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <label class="form-label w-100  mb-3">
+            <input class="form-control" type="search" name="movie name" placeholder="Movie Name" required>
+          </label>
+
+          <label  class="form-label w-100">
+            <input class="form-control" list="datalistOptions" name="IMDb" placeholder="IMDb">
+            <datalist id="datalistOptions">
+              <option value="1"  >1</option>
+              <option value="2" >2</option>
+              <option value="3" >3</option>
+              <option value="4" >4</option>
+              <option value="5" >5</option>
+              <option value="6" >6</option>
+              <option value="7" >7</option>
+              <option value="8" >8</option>
+              <option value="9" >9</option>
+              <option value="10" >10</option>
+            </datalist>
+          </label>
+
+          <label class="form-label w-100 mb-3">
+            <select class="form-select" name="watching option">
+              <option value="All" selected>All</option>
+              <option value="Free">Free</option>
+              <option value="Paid">Paid</option>
+            </select>
+          </label>
+
+
+          <label class="form-label w-100 mb-3">
+            <select class="form-select" name=" movie rating">
+              <option value="Rating (hight to low)" selected>Rating (hight to low)</option>
+              <option value="Rating (low to hight)" >Rating (low to hight)</option>
+            </select>
+          </label>
+
+          <button class="btn btn-primary w-100" type="submit" >Search</button>
+        </form>
+        <h2 class="h2 mt-3 mb-2">Bookmarked movies</h2>
+        <ul class="list-unstyled ">
+          <li class="w-100 p-3 border rounded ">
+            <Strong class="fs-5"> Awengers: Infinity War </Strong>
+            <button class="btn btn-danger w-25 d-block mt-2">Remove</button>
+          </li>
+
+          <li class="w-100 p-3 border rounded ">
+            <Strong class="fs-5"> The Avengers </Strong>
+            <button class="btn btn-danger w-25 d-block mt-2">Remove</button>
+          </li>
+
+          <li class="w-100 p-3 border rounded ">
+            <Strong class="fs-5"> 12 Years a Slave </Strong>
+            <button class="btn btn-danger w-25 d-block mt-2">Remove</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-8 ps-4">
+        <div class="row">
+          <p class="fs-5 fw-bolder p-0">Search resaults: 29</p>
+          <div class="alert alert-info" role="alert">
+            use the form on the left to search for a movie
+          </div>
+
+          <div class="col-6 ps-0 ">
+            <div class="card w-100" style="width: 18rem;">
+              <div id="carouselExampleIndicators-1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/avengers-infinity-war-movie.jpg" class="d-block w-100 card-img-top" alt="avengers infinity war heros">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/infinity-second.jpg" class="d-block w-100" alt="avengers infinity war heros">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/intinity-six.jpg" class="d-block w-100" alt="avengers infinity war heros">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/infinity-forth.png" class="d-block w-100" alt="avengers infinity war heros">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/infinity-fifth.jpg" class="d-block w-100" alt="avengers infinity war heros">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Avengers: Infinity War</h5>
+                <div class="d-flex align-items-start my-3">
+                  <img src="./images/calendar.png" alt="calendar icon" width="24" height="24">
+                  <span class="ms-2">2018</span>
+                </div>
+
+                <div class="d-flex align-items-start my-3">
+                  <img src="./images/star.svg" alt="star icon" width="24" height="24">
+                  <span class="ms-2">8.7</span>
+                </div>
+                <a href="#" class="btn btn-outline-primary mx-2">Watch Trailer</a>
+                <a type="button" class="btn btn-info mx-2"
+                data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                More info
+              </a>
+              <div class="modal fade " id="exampleModal1" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content bg-dark bg-gradient w-75">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-white" id="exampleModalLabel">More info</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-capitalize text-info">
+                      Watch free infinity war movie online
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">watch now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <a href="#" class="btn btn-outline-success mx-2">Bookmark</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-6 pe-0 ">
+            <div class="card w-100" style="width: 18rem;">
+              <div id="carouselExampleIndicators-2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/black-panther.jpg" class="d-block w-100 card-img-top" alt="avengers infinity war heros">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/the-aveengers.jpg" class="d-block w-100" alt="avengers heros">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/hulk.jpg" class="d-block w-100" alt="avengers hero">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/avengers-1.jpg" class="d-block w-100" alt="avengers hero">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/tor.png" class="d-block w-100" alt="avengers hero">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"> The Avengers</h5>
+                <div class="d-flex align-items-start my-3">
+                  <img src="./images/calendar.png" alt="calendar icon" width="24" height="24">
+                  <span class="ms-2">2012</span>
+                </div>
+
+                <div class="d-flex align-items-start my-3">
+                  <img src="./images/star.svg" alt="star icon" width="24" height="24">
+                  <span class="ms-2">8.1</span>
+                </div>
+                <a href="#" class="btn btn-outline-primary mx-2">Watch Trailer</a>
+
+                <a type="button" class="btn btn-info mx-2"
+                data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                More info
+              </a>
+              <div class="modal fade " id="exampleModal2" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content bg-dark bg-gradient w-75">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-white" id="exampleModalLabe2">More info</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-capitalize text-info">
+                      Watch free marvel movies online
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">watch now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-outline-success mx-2">Bookmark</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination p-5 ms-2 justify-content-center text-center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
